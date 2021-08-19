@@ -64,7 +64,7 @@ api.createWidget("theme-selector", {
             let user = api.getCurrentUser();
             let sectionHeaderLink = null;
             if (user) {
-                sectionHeaderLink = h('a.widget-link', { href: "community/forums/my/preferences/interface" }, sectionHeaderText);
+                sectionHeaderLink = h('a.widget-link', { href: "/community/forums/my/preferences/interface" }, sectionHeaderText);
             } else {
                 sectionHeaderLink= h('span', {}, sectionHeaderText);
             }
